@@ -1,0 +1,31 @@
+---
+- hosts: 4linux_desafio
+  become: yes
+
+  roles:
+    - role: geerlingguy.docker
+      vars:
+        docker_users: suporte
+
+    # - role: geerlingguy.firewall
+    #   vars:
+    #     firewall_allowed_tcp_ports:
+    #       - 80
+    #       - 443
+    #       - 8001
+    #       - 8002
+    #       - 8003
+
+    - role: wordpress_docker
+      vars:
+        site_name: app1
+        wordpress_ports: "80:80"
+    - role: wordpress_docker
+      vars:
+        site_name: app2
+        wordpress_ports: "80:80"
+    - role: wordpress_docker
+      vars:
+        site_name: app3
+        wordpress_ports: "80:80"
+    - role: nginx

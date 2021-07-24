@@ -1,7 +1,10 @@
 # Roteiro do Desafio
 
 1. Instalar o NGINX na Máquina Local
-  - Criar 3 Virtualhosts no NGINX com proxy_pass para os domínios abaixo, direcionando as requisições para os contêineres criados no passo 2. 
+  - Criar 3 Virtualhosts no NGINX com `proxy_pass` para os domínios abaixo, direcionando as requisições para os contêineres criados no passo 2. 
+    - app1.4linux.local.com.br
+    - app2.4linux.local.com.br
+    - app3.4linux.local.com.br
   - Fique atento na necessidade usar o parâmetro proxy_set_header na sua configuração.
 
 2. Instalar o Docker na Máquina Local

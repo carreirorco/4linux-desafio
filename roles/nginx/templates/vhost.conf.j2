@@ -1,0 +1,26 @@
+server {
+    listen 80;
+    server_name app1 app1.4linux.local.com.br www.app1.4linux.local.com.br;
+    location / {
+        root /opt/docker/wordpress/app1;
+        proxy_pass http://app1.4linux.local.com.br:8001;
+    }
+}
+
+server {
+    listen 80;
+    server_name app2 app2.4linux.local.com.br www.app2.4linux.local.com.br;
+    location / {
+        root /opt/docker/wordpress/app2;
+        proxy_pass http://app2.4linux.local.com.br:8002;
+    }
+}
+
+server {
+    listen 80;
+    server_name app3 app3.4linux.local.com.br www.app3.4linux.local.com.br;
+    location / {
+        root /opt/docker/wordpress/app3;
+        proxy_pass http://app3.4linux.local.com.br:8003;
+    }
+}

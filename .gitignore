@@ -1,2 +1,4 @@
-inventory
 chave.pem
+roles/geerlingguy.docker
+roles/geerlingguy.firewall
+vagrant/.vagrant
