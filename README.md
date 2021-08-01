@@ -1,9 +1,9 @@
 # 4linux-desafio
 
-## Clonar o repositório (branch dev atualmente)
+## Clonar o repositório
 
 ```bash
-git clone --branch dev https://github.com/carreirorco/4linux-desafio.git
+git clone https://github.com/carreirorco/4linux-desafio.git
 cd 4linux-desafio
 ```
 
